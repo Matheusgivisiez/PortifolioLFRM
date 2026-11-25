@@ -263,10 +263,13 @@ export function ArtistWall() {
         </Reveal>
 
         <Reveal className="mt-8 grid gap-6 md:grid-cols-12">
-          <p className="text-[length:var(--text-lead)] leading-snug text-paper/85 md:col-span-6">
-            Credenciais de quem cruzou o caminho — shows, bastidores e eventos ao lado de artistas.
-            {!canDrag && ' Toque em uma credencial para virar.'}
-          </p>
+          <div className="space-y-4 md:col-span-6">
+            <p className="text-[length:var(--text-lead)] leading-snug text-paper/85">
+              Um registro de artistas com quem Luís já teve a oportunidade de trabalhar, fazendo parte de
+              grandes experiências nos bastidores, seja no marketing ou na produção dos eventos.
+            </p>
+            <p className="font-medium text-coral">Toque em uma credencial para conhecer essa trajetória.</p>
+          </div>
           {!hasPhotos && (
             <p className="border-l-[3px] border-coral pl-3 text-sm text-paper/80 md:col-span-4 md:col-start-9">
               As credenciais abaixo são espaços reservados para as fotos com artistas.

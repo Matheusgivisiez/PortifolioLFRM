@@ -20,11 +20,12 @@ export type ArtistPhoto = {
 }
 
 export const artistPhotos: ArtistPhoto[] = [
-  { src: '/images/artistas/artista-01.jpg', artist: 'GP da ZL', context: 'JUV' },
+  { src: '/images/artistas/artista-09.jpg', artist: 'Boca Rosa', context: 'Entrevistando', focus: '50% 45%' },
   { src: '/images/artistas/artista-02.jpg', artist: 'Jorge & Mateus', context: 'Show Agência 1' },
+  { src: '/images/artistas/artista-05.jpg', artist: 'Filipe Ret', context: 'Copa Med' },
+  { src: '/images/artistas/artista-01.jpg', artist: 'GP da ZL', context: 'JUV' },
   { src: '/images/artistas/artista-03.jpg', artist: 'MC PH', context: 'JUV' },
   { src: '/images/artistas/artista-04.jpg', artist: 'MC Pedrinho', context: 'JUV' },
-  { src: '/images/artistas/artista-05.jpg', artist: 'Filipe Ret', context: 'Copa Med' },
   { src: '/images/artistas/artista-06.jpg', artist: 'MC Hariel', context: 'Festival Trap', focus: '50% 40%' },
   { src: '/images/artistas/artista-07.jpg', artist: 'Jon Vlogs', context: 'Festival Sebrae' },
   { src: '/images/artistas/artista-08.jpg', artist: 'Leonardo', context: 'Aniversário de Ipatinga' },
