@@ -1,0 +1,14 @@
+{
+  "name": "Luís Felipe Martins — Portfólio",
+  "short_name": "LFRM",
+  "icons": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#F5F2EC",
+  "background_color": "#F5F2EC",
+  "display": "standalone"
+}

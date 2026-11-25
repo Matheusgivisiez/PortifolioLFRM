@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid slice"><rect width="1200" height="1200" fill="#FF7548"/>
+<g transform="rotate(-8 600 600)"><rect x="218" y="282" width="560" height="700" fill="#000" fill-opacity=".12"/><rect x="200" y="260" width="560" height="700" fill="#F5F2EC"/></g>
+<g transform="rotate(6 600 600)"><rect x="458" y="222" width="520" height="640" fill="#000" fill-opacity=".14"/><rect x="440" y="200" width="520" height="640" fill="#202020"/>
+<circle cx="700" cy="470" r="170" fill="#7547F8"/><rect x="500" y="720" width="260" height="16" fill="#F5F2EC"/><rect x="500" y="750" width="180" height="16" fill="#F5F2EC" fill-opacity=".6"/></g>
+<circle cx="300" cy="880" r="110" fill="#7547F8"/>
+<rect x="840" y="860" width="160" height="160" fill="#F5F2EC" transform="rotate(-12 920 940)"/>
+</svg>

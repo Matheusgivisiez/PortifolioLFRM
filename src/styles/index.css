@@ -1,0 +1,161 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   LFRM — Design tokens
+   Paleta oficial: Off-white 55% · Carvão 25% · Roxo 15% · Coral 5%
+   ========================================================================== */
+
+@theme {
+  /* Cores de marca */
+  --color-paper: #f5f2ec;
+  --color-paper-deep: #ebe6dc;
+  --color-ink: #202020;
+  --color-ink-soft: #57534d; /* 6.6:1 sobre paper — textos secundários */
+  --color-violet: #7547f8;
+  --color-violet-deep: #5a2fe0;
+  --color-coral: #ff7548; /* apenas detalhes gráficos — não usar como cor de texto sobre paper */
+  --color-line: rgb(32 32 32 / 0.14);
+  --color-line-inverse: rgb(245 242 236 / 0.18);
+
+  /* Tipografia */
+  --font-display: "Bowlby One SC", "Arial Black", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans Variable", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Escala tipográfica fluida (mobile → desktop) */
+  --text-mega: clamp(3.4rem, min(19vw, 19.5svh), 13rem);
+  --text-giant: clamp(3rem, 10vw, 9.5rem);
+  --text-display: clamp(2.4rem, 6.4vw, 5.75rem);
+  --text-headline: clamp(1.75rem, 3.4vw, 3rem);
+  --text-lead: clamp(1.125rem, 1.5vw, 1.375rem);
+  --text-eyebrow: 0.75rem;
+
+  /* Movimento — identidade: uma curva para 80% das animações */
+  --ease-signature: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-exit: cubic-bezier(0.55, 0, 1, 0.45);
+
+  /* Espaçamento de seção */
+  --spacing-gutter: clamp(1rem, 3.2vw, 2.75rem);
+  --spacing-section: clamp(6rem, 13vw, 11rem);
+
+  --breakpoint-3xl: 112rem;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+
+  ::selection {
+    background: var(--color-violet);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-violet);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .on-dark :focus-visible,
+  .on-violet :focus-visible {
+    outline-color: var(--color-coral);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .shell {
+    width: 100%;
+    max-width: 112rem;
+    margin-inline: auto;
+    padding-inline: var(--spacing-gutter);
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: var(--text-eyebrow);
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  /* Bowlby One SC: peso único (400), caixa-alta com versaletes — nunca aplicar bold */
+  .display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 0.9;
+  }
+
+  .skip-link {
+    position: fixed;
+    left: 1rem;
+    top: -4rem;
+    z-index: 100;
+    background: var(--color-ink);
+    color: var(--color-paper);
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+    transition: top 0.2s var(--ease-signature);
+  }
+  .skip-link:focus {
+    top: 1rem;
+  }
+}
+
+@layer utilities {
+  /* Máscara de entrada de linha: corta só embaixo, preservando acentos e fitas inclinadas */
+  .line-mask {
+    clip-path: inset(-60% -6% -6% -6%);
+  }
+  /* Contorno tipográfico — detalhe gráfico. Cor via --stroke-color. */
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: var(--stroke-width, 1.5px) var(--stroke-color, var(--color-ink));
+  }
+  .marquee-track {
+    animation: marquee 38s linear infinite;
+  }
+  .spin-slow {
+    animation: spin 22s linear infinite;
+  }
+  .grain {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E");
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
