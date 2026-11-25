@@ -231,17 +231,17 @@ export function ArtistWall() {
     <section
       id="artistas"
       aria-labelledby="artistas-titulo"
-      className="on-dark relative isolate overflow-hidden bg-ink pb-[length:var(--spacing-section)] pt-[calc(var(--spacing-section)+2rem)] text-paper"
+      className="on-dark relative isolate overflow-hidden bg-ink py-[length:var(--spacing-section)] text-paper"
     >
-      {/* luzes de palco */}
+      {/* luzes de palco — surgem aos poucos (máscara) para não criar corte com a seção de cima */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[70%] bg-[radial-gradient(ellipse_at_20%_0%,rgb(117_71_248/0.35),transparent_55%),radial-gradient(ellipse_at_85%_10%,rgb(255_117_72/0.22),transparent_50%)]"
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[80%] bg-[radial-gradient(ellipse_at_20%_35%,rgb(117_71_248/0.35),transparent_60%),radial-gradient(ellipse_at_85%_40%,rgb(255_117_72/0.22),transparent_55%)] [mask-image:linear-gradient(to_bottom,transparent,black_40%,black_70%,transparent)]"
       />
 
       <div className="shell">
         <div className="flex items-end justify-between gap-6">
-          <SectionLabel index="02" className="text-paper/70">
+          <SectionLabel index="04" className="text-paper/70">
             Trabalhos
           </SectionLabel>
           {canDrag && (

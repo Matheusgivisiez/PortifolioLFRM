@@ -72,10 +72,10 @@ export const profile = {
 
 /** Itens do menu. Com `route`, o item leva a uma página própria em vez de uma seção da home. */
 export const navItems: { id: string; label: string; route?: string }[] = [
-  { id: 'artistas', label: 'Backstage' },
+  { id: 'sobre', label: 'Sobre' },
   { id: 'ao-vivo', label: 'Ao vivo' },
   { id: 'hallowparty', label: 'Hallowparty', route: '/hallowparty' },
-  { id: 'sobre', label: 'Sobre' },
+  { id: 'artistas', label: 'Backstage' },
   { id: 'habilidades', label: 'Habilidades' },
   { id: 'contato', label: 'Contato' },
 ]

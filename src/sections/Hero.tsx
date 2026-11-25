@@ -201,8 +201,8 @@ export function Hero() {
         >
           <div className="flex items-end gap-5 md:col-span-7 lg:col-span-6">
             <RotatingBadge
-              href="#artistas"
-              label="Rolar até as fotos com artistas"
+              href="#sobre"
+              label="Rolar para a próxima seção"
               text={`${profile.concept.replace('.', '')} · ${profile.monogram} · `}
               className="hidden w-28 shrink-0 rounded-full bg-paper text-ink md:grid lg:w-32"
             />

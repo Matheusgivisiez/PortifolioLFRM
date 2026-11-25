@@ -49,10 +49,10 @@ export function Home() {
       {/* seções escuras seguidas num único fundo carvão: evita frestas claras de 1px
           quando o navegador arredonda alturas (zoom do sistema em 125%, 150%...) */}
       <div className="bg-ink">
-        <ArtistWall />
+        <About />
         <LiveStories />
         <HallowTeaser />
-        <About />
+        <ArtistWall />
       </div>
       <Skills />
       <Contact />

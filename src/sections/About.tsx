@@ -57,10 +57,10 @@ export function About() {
       ref={ref}
       id="sobre"
       aria-labelledby="sobre-titulo"
-      className="on-dark relative overflow-hidden bg-ink py-[length:var(--spacing-section)] text-paper"
+      className="on-dark relative overflow-hidden bg-ink pb-[length:var(--spacing-section)] pt-[calc(var(--spacing-section)+2rem)] text-paper"
     >
       <div className="shell">
-        <SectionLabel index="04" className="text-paper/70">
+        <SectionLabel index="02" className="text-paper/70">
           Sobre mim
         </SectionLabel>
 
