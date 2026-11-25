@@ -7,6 +7,7 @@ import { Contact } from '../sections/Contact'
 import { Hero } from '../sections/Hero'
 import { ArtistWall } from '../sections/ArtistWall'
 import { HallowTeaser } from '../sections/HallowTeaser'
+import { LiveStories } from '../sections/LiveStories'
 import { Skills } from '../sections/Skills'
 
 const disciplines = [
@@ -49,6 +50,7 @@ export function Home() {
           quando o navegador arredonda alturas (zoom do sistema em 125%, 150%...) */}
       <div className="bg-ink">
         <ArtistWall />
+        <LiveStories />
         <HallowTeaser />
         <About />
       </div>

@@ -26,8 +26,9 @@ export const profile = {
   about: {
     statement: 'Ideias que ganham forma.',
     paragraphs: [
-      'Sou estudante de Publicidade e Propaganda e encaro cada projeto como um exercício de olhar diferente para a mesma coisa.',
-      'Meu interesse está no encontro entre criatividade, comunicação e design — o ponto em que uma ideia sai da cabeça e vira algo que as pessoas veem, sentem e lembram.',
+      'Sou apaixonado por comunicação e pelo universo dos eventos. Gosto de estar envolvido em projetos, acompanhar cada etapa e fazer parte do processo de transformar ideias em experiências que marcam pessoas.',
+      'Sou estudante de Publicidade e Propaganda e acredito que cada trabalho é uma oportunidade de aprender, criar e enxergar novas possibilidades. Levo comigo a vontade de fazer acontecer e o compromisso de sempre entregar o meu melhor em tudo aquilo que me proponho a fazer.',
+      'Mais do que participar de projetos, gosto de viver cada experiência, contribuir com ideias e deixar um pouco de mim em tudo o que faço.',
     ],
     facts: [
       { label: 'Nome', value: 'Luís Felipe Martins' },
@@ -72,6 +73,7 @@ export const profile = {
 /** Itens do menu. Com `route`, o item leva a uma página própria em vez de uma seção da home. */
 export const navItems: { id: string; label: string; route?: string }[] = [
   { id: 'artistas', label: 'Backstage' },
+  { id: 'ao-vivo', label: 'Ao vivo' },
   { id: 'hallowparty', label: 'Hallowparty', route: '/hallowparty' },
   { id: 'sobre', label: 'Sobre' },
   { id: 'habilidades', label: 'Habilidades' },

@@ -242,7 +242,7 @@ export function ArtistWall() {
       <div className="shell">
         <div className="flex items-end justify-between gap-6">
           <SectionLabel index="02" className="text-paper/70">
-            Fotos com artistas
+            Trabalhos
           </SectionLabel>
           {canDrag && (
             <p className="eyebrow hidden items-center gap-2 text-coral md:flex">

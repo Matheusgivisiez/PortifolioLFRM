@@ -78,7 +78,7 @@ export function Contact() {
 
       {/* cartaz final — headline em tela cheia */}
       <div className="shell relative flex min-h-svh flex-col justify-center pb-16 pt-28">
-        <SectionLabel index="05" className="text-paper/80">
+        <SectionLabel index="06" className="text-paper/80">
           Contato
         </SectionLabel>
 

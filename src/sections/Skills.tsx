@@ -37,7 +37,7 @@ export function Skills() {
     >
       <div className="shell">
         <div className="flex items-end justify-between gap-6">
-          <SectionLabel index="04">O que eu trago</SectionLabel>
+          <SectionLabel index="05">O que eu trago</SectionLabel>
           <Reveal className="hidden max-w-xs text-right text-sm md:block">
             Competências que guiam o meu processo — da primeira ideia à peça final.
           </Reveal>
